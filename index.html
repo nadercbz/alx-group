@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ALX Group · Gastronomie und Handel aus Berlin</title>
+  <meta name="description" content="ALX Group ist eine Berliner Unternehmensgruppe für Gastronomie und Handel: The Meat Company, What about coffee? und The 25 Hours Store. Drei Marken, vier Standorte.">
+  <meta name="theme-color" content="#0a0a0b">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ALX Group · Gastronomie und Handel aus Berlin">
+  <meta property="og:description" content="The Meat Company, What about coffee? und The 25 Hours Store. Drei Marken, vier Standorte, ein Anspruch.">
+  <meta property="og:image" content="https://nadercbz.github.io/alx-group/assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/FunnelDisplay-normal-latin-1.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip" href="#gruppe">Zum Inhalt</a>
+
+  <!-- Navigation -->
+  <header class="nav" data-nav>
+    <a class="nav-mark" href="#top" aria-label="Nach oben"><span data-name-kurz>ALX</span><span class="nav-mark-zusatz" data-name-zusatz>Group</span></a>
+    <nav class="nav-links" aria-label="Hauptnavigation">
+      <a href="#gruppe" data-i18n="nav.gruppe">Gruppe</a>
+      <a href="#marken" data-i18n="nav.marken">Marken</a>
+      <a href="#standorte" data-i18n="nav.standorte">Standorte</a>
+      <a href="#wachstum" data-i18n="nav.wachstum">Wachstum</a>
+      <a href="#kontakt" data-i18n="nav.kontakt">Kontakt</a>
+    </nav>
+    <div class="nav-rechts">
+      <div class="lang" role="group" aria-label="Sprache">
+        <button type="button" data-lang="de" aria-pressed="true">DE</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="nav-cta" href="#wachstum" data-i18n="nav.partner">Partner werden</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="mobilmenu" aria-label="Menü"><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="mobilmenu" id="mobilmenu" hidden>
+    <nav aria-label="Menü">
+      <a href="#gruppe"><small>01</small><span data-i18n="nav.gruppe">Gruppe</span></a>
+      <a href="#marken"><small>02</small><span data-i18n="nav.marken">Marken</span></a>
+      <a href="#standorte"><small>03</small><span data-i18n="nav.standorte">Standorte</span></a>
+      <a href="#wachstum"><small>04</small><span data-i18n="nav.wachstum">Wachstum</span></a>
+      <a href="#kontakt"><small>05</small><span data-i18n="nav.kontakt">Kontakt</span></a>
+    </nav>
+    <div class="lang lang--gross" role="group" aria-label="Sprache">
+      <button type="button" data-lang="de" aria-pressed="true">Deutsch</button>
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- 00 Hero: riesige Buchstaben, durch die das Reel aller drei Marken läuft. Beim Scrollen fliegt die Kamera hindurch. -->
+    <section class="hero" id="top" aria-label="ALX Group">
+      <div class="hero-pin">
+        <video class="hero-video" muted playsinline loop preload="auto" poster="assets/video/reel-poster.webp"
+               data-src="assets/video/reel.mp4" data-src-sm="assets/video/reel-sm.mp4" aria-hidden="true"></video>
+        <svg class="hero-maske" aria-hidden="true" focusable="false">
+          <defs>
+            <mask id="heroMaske" maskUnits="userSpaceOnUse" x="-50000" y="-50000" width="100000" height="100000">
+              <rect x="-50000" y="-50000" width="100000" height="100000" fill="#fff"/>
+              <text class="hero-text" data-hero-text text-anchor="middle" fill="#000">ALX</text>
+            </mask>
+          </defs>
+          <rect class="hero-flaeche" x="-50000" y="-50000" width="100000" height="100000" mask="url(#heroMaske)"/>
+        </svg>
+        <div class="hero-oben">
+          <p class="mono" data-i18n="hero.ueber">Eine Berliner Unternehmensgruppe für Gastronomie und Handel</p>
+          <p class="mono hero-ort">Berlin · 52.52° N · 13.40° O</p>
+        </div>
+        <div class="hero-unten">
+          <p class="hero-unter" data-i18n="hero.unter">Drei Marken. Vier Standorte. Ein Anspruch.</p>
+          <p class="mono hero-scroll"><span data-i18n="hero.scroll">Scrollen</span><i aria-hidden="true"></i></p>
+        </div>
+        <div class="hero-schatten"></div>
+        <div class="hero-ende">
+          <h1 class="hero-titel" data-i18n="hero.titel">Gastronomie und Handel <em>aus Berlin.</em></h1>
+          <p class="hero-jetzt mono"><span data-i18n="hero.jetzt">Gerade im Bild</span> <b data-reel-name>The Meat Company</b> <span class="hero-zaehler" data-reel-index>01 / 03</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 01 Statement -->
+    <section class="statement" id="gruppe">
+      <p class="label mono"><span>01</span><span data-i18n="statement.label">Die Gruppe</span></p>
+      <p class="statement-text" data-i18n="statement.text" data-woerter>Wir bauen Orte, an die Berlin zurückkommt. Vom Späti, der um 4:30 Uhr aufschließt, <span class="pill" data-pill="h25"></span> über Croffles in Zehlendorf <span class="pill" data-pill="wac"></span> bis zum Brisket, das vierzehn Stunden im Smoker war. <span class="pill" data-pill="meat"></span></p>
+    </section>
+
+    <!-- 02 Zahlen -->
+    <section class="zahlen" aria-labelledby="zahlenTitel">
+      <div class="kopf">
+        <p class="label mono"><span>02</span><span data-i18n="zahlen.label">Die Gruppe in Zahlen</span></p>
+        <h2 class="titel" id="zahlenTitel" data-i18n="zahlen.titel">Gebaut, um zu <em>wachsen.</em></h2>
+      </div>
+      <ol class="zahlen-grid" data-zahlen></ol>
+    </section>
+
+    <!-- 03 Marken -->
+    <section class="marken" id="marken" aria-labelledby="markenTitel">
+      <div class="kopf kopf--marken">
+        <p class="label mono"><span>03</span><span data-i18n="marken.label">Das Portfolio</span></p>
+        <h2 class="titel titel--xl" id="markenTitel" data-i18n="marken.titel">Drei Marken. <em>Jede eine eigene Welt.</em></h2>
+        <p class="kopf-text" data-i18n="marken.text">Jede Marke der Gruppe hat ihr eigenes Gesicht, ihre eigene Karte und ihre eigene Website. Ein Klick führt direkt hin.</p>
+      </div>
+      <div class="laufband" aria-hidden="true"><div class="laufband-spur" data-laufband></div></div>
+      <div class="stapel" data-marken></div>
+    </section>
+
+    <!-- 04 Sortiment -->
+    <section class="sortiment" aria-labelledby="sortimentTitel">
+      <div class="kopf">
+        <p class="label mono"><span>04</span><span data-i18n="sortiment.label">Sortiment</span></p>
+        <h2 class="titel" id="sortimentTitel" data-i18n="sortiment.titel">Über 100 Produkte. <em>Drei Sortimente.</em></h2>
+      </div>
+      <div class="sortiment-reihen" data-sortiment aria-hidden="true"></div>
+    </section>
+
+    <!-- 05 Standorte -->
+    <section class="standorte" id="standorte" aria-labelledby="standorteTitel">
+      <div class="kopf">
+        <p class="label mono"><span>05</span><span data-i18n="standorte.label">Standorte</span></p>
+        <h2 class="titel titel--xl" id="standorteTitel" data-i18n="standorte.titel">Zuhause <em>in ganz Berlin.</em></h2>
+        <p class="kopf-text" data-i18n="standorte.text">Mitte, Zehlendorf und Märkisches Viertel. Charlottenburg ist als Nächstes dran.</p>
+      </div>
+      <div class="standorte-grid">
+        <figure class="karte" data-karte aria-label="Karte von Berlin mit den Standorten der Gruppe"></figure>
+        <ol class="orte" data-orte></ol>
+      </div>
+    </section>
+
+    <!-- 06 Prinzipien -->
+    <section class="prinzipien" aria-labelledby="prinzipienTitel">
+      <div class="kopf">
+        <p class="label mono"><span>06</span><span data-i18n="prinzipien.label">Was uns antreibt</span></p>
+        <h2 class="titel" id="prinzipienTitel" data-i18n="prinzipien.titel">Vier Prinzipien. <em>Jeder Standort.</em></h2>
+      </div>
+      <ol class="prinzipien-liste">
+        <li data-bild="assets/img/meat-board.webp"><span class="mono">01</span><h3 data-i18n="p1.titel">Eigene Marken</h3><p data-i18n="p1.text">Jede Marke hat ihr eigenes Gesicht, ihre eigene Karte und ihre eigene Website. Keine Kopie, kein Franchise von der Stange.</p></li>
+        <li data-bild="assets/img/wac-latte.webp"><span class="mono">02</span><h3 data-i18n="p2.titel">Produkt zuerst</h3><p data-i18n="p2.text">Vierzehn Stunden im Smoker, Croissants von Hand gefüllt, Regale, die vor Sonnenaufgang stehen. Qualität ist bei uns kein Versprechen, sondern Ablauf.</p></li>
+        <li data-bild="assets/img/h25-innen.webp"><span class="mono">03</span><h3 data-i18n="p3.titel">Nachbarschaft</h3><p data-i18n="p3.text">Mitte, Zehlendorf, Märkisches Viertel. Wir bauen Orte für die Menschen, die dort jeden Tag sind.</p></li>
+        <li data-bild="assets/img/meat-kueche.webp"><span class="mono">04</span><h3 data-i18n="p4.titel">Wachstum mit Plan</h3><p data-i18n="p4.text">Charlottenburg ist der nächste Standort. Wir wachsen dort, wo eine Marke wirklich gebraucht wird.</p></li>
+      </ol>
+      <img class="prinzip-bild" data-prinzip-bild alt="" aria-hidden="true">
+    </section>
+
+    <!-- 07 Wachstum -->
+    <section class="wachstum" id="wachstum" aria-labelledby="wachstumTitel">
+      <div class="kopf">
+        <p class="label mono"><span>07</span><span data-i18n="wachstum.label">Wachstum</span></p>
+        <h2 class="titel titel--riesig" id="wachstumTitel" data-i18n="wachstum.titel">Nächster Halt: <em>Charlottenburg.</em></h2>
+        <p class="kopf-text" data-i18n="wachstum.text">Die Gruppe wächst weiter. Dafür suchen wir in Berlin die richtigen Flächen, Partner und Menschen.</p>
+      </div>
+      <ul class="wachstum-grid">
+        <li><span class="mono">A</span><h3 data-i18n="w1.titel">Für Vermieter</h3><p data-i18n="w1.text">Laden und Gastroflächen mit Frequenz. Wir bringen eingeführte Marken, Content und ein Team, das liefert.</p></li>
+        <li><span class="mono">B</span><h3 data-i18n="w2.titel">Für Partner</h3><p data-i18n="w2.text">Lieferanten, Lieferplattformen, Marken und Creator, die mit uns etwas aufbauen wollen.</p></li>
+        <li><span class="mono">C</span><h3 data-i18n="w3.titel">Für Talente</h3><p data-i18n="w3.text">Küche, Smoker, Barista, Service und Verkauf. Drei Marken, viele Wege rein.</p></li>
+      </ul>
+    </section>
+
+    <!-- 08 Kontakt -->
+    <section class="kontakt" id="kontakt" aria-labelledby="kontaktTitel">
+      <p class="label mono"><span>08</span><span data-i18n="kontakt.label">Kontakt</span></p>
+      <h2 class="titel titel--riesig" id="kontaktTitel" data-i18n="kontakt.titel">Lass uns <em>reden.</em></h2>
+      <p class="kopf-text" data-i18n="kontakt.text">Anfragen zu Flächen, Partnerschaften und Karriere.</p>
+      <div class="kontakt-mail" data-kontakt-mail hidden></div>
+      <p class="mono kontakt-unter" data-i18n="kontakt.marken">Direkt zu unseren Marken</p>
+      <ul class="kontakt-marken" data-kontakt-marken></ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-zeile">
+      <p class="mono">© <span data-jahr>2026</span> <span data-name>ALX Group</span>. <span data-i18n="footer.rechte">Alle Rechte vorbehalten.</span></p>
+      <nav class="footer-links" aria-label="Rechtliches">
+        <button type="button" data-modal="impressum" data-i18n="footer.impressum">Impressum</button>
+        <button type="button" data-modal="datenschutz" data-i18n="footer.datenschutz">Datenschutz</button>
+        <a href="#top" data-i18n="footer.oben">Nach oben</a>
+      </nav>
+    </div>
+    <p class="mono footer-quelle" data-i18n="footer.karte">Karte: Bezirksgrenzen Berlin, Open Data.</p>
+    <svg class="footer-wort" aria-hidden="true" focusable="false"><text data-footer-wort>ALX</text></svg>
+  </footer>
+
+  <dialog class="modal" data-modal-box>
+    <form method="dialog"><button class="modal-zu" aria-label="Schließen" data-i18n-a="aria-label:modal.schliessen">×</button></form>
+    <div data-modal-inhalt></div>
+  </dialog>
+
+  <div class="cursor" aria-hidden="true"><span data-cursor-text></span></div>
+
+  <script src="js/daten.js"></script>
+  <script src="js/karte-daten.js"></script>
+  <script src="js/sortiment.js"></script>
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
